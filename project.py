@@ -64,6 +64,7 @@ class PriceMachine:
         <!DOCTYPE html>
         <html>
         <head>
+            <meta charset="UTF-8">
             <title>Позиции продуктов</title>
             <style>
                 table { width: 100%; border-collapse: collapse; }
@@ -141,5 +142,6 @@ while True:
             print(
                 f"{idx}  {item['product']}  {item['price']}  {item['weight']}  {item['filename']}  "
                 f"{item['price_per_kg']:.2f}")
+        print('Данные сохранены в файл "output.html"')
     else:
         print("Товары не найдены.")
